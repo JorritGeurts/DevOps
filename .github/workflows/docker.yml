@@ -36,8 +36,8 @@ jobs:
       - name: Push Docker image to Docker Hub
         run: docker push jorritgeurts/dotnetapp:latest
 
-      - name: Run Docker container on a specific IP
-        run: docker run -d -p 192.168.1.100:8080:80 --name dotnetapp-container jorritgeurts/dotnetapp:latest
+      - name: Run Docker container
+        run: docker run -d -p 8080:80 --name dotnetapp-container jorritgeurts/dotnetapp:latest
 
 
 
