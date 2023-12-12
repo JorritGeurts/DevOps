@@ -1,0 +1,21 @@
+﻿@using Contentful.Core.Models
+
+@model ContentfulCollection<SOTShips>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@foreach (var ships in Model)
+{
+    <h2>@ships.ShipName</h2>
+    <img src="@ships.ShipImage.File.Url" alt="werkt niet" />
+    <p>Crew Size: @ships.CrewSize</p>
+    <p>Number of Decks: @ships.NumberofDecks</p>
+    <p>Number of Masts: @ships.NumberofMasts</p>
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
