@@ -36,5 +36,5 @@ jobs:
       - name: Push Docker image to Docker Hub
         run: docker push jorritgeurts/dotnetapp:latest
 
-      - name: Run localhost
-        run: docker run 
+      - name: Run Docker container on localhost
+        run: docker run -p 8080:80 --name dotnetapp-container -d jorritgeurts/dotnetapp:latest
