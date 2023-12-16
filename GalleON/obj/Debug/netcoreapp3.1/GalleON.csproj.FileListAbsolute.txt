@@ -64,3 +64,4 @@ C:\Users\Jorrit Geurts\DevOpsCaseStudy\GalleON\GalleON\obj\Debug\netcoreapp3.1\G
 C:\Users\Jorrit Geurts\DevOpsCaseStudy\GalleON\GalleON\obj\Debug\netcoreapp3.1\GalleON.dll
 C:\Users\Jorrit Geurts\DevOpsCaseStudy\GalleON\GalleON\obj\Debug\netcoreapp3.1\GalleON.pdb
 C:\Users\Jorrit Geurts\DevOpsCaseStudy\GalleON\GalleON\obj\Debug\netcoreapp3.1\GalleON.genruntimeconfig.cache
+C:\Users\Jorrit Geurts\DevOpsCaseStudy\GalleON\GalleON\bin\Debug\netcoreapp3.1\libman.json

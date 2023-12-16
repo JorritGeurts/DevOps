@@ -8,11 +8,20 @@
 
 @foreach (var ships in Model)
 {
-    <h2>@ships.ShipName</h2>
-    <img src="@ships.ShipImage.File.Url" alt="werkt niet" />
-    <p>Crew Size: @ships.CrewSize</p>
-    <p>Number of Decks: @ships.NumberofDecks</p>
-    <p>Number of Masts: @ships.NumberofMasts</p>
+    <div class="card m-2 col-12 col-lg-10 mx-auto">
+        <div class="card-header">
+            <h2 class="card-title">@ships.ShipName</h2>
+        </div>
+        <div class="card-body text-center">
+            <img src="@ships.ShipImage.File.Url" alt="werkt niet" style="display: block; max-width: 100%;" />
+            <div class="col-12 row justify-content-center" style="font-size: 22px;">
+                <p class="col-4"><strong>Crew Size</strong>: @ships.CrewSize</p>
+                <p class="col-4"><strong>Number of Decks</strong>: @ships.NumberofDecks</p>
+                <p class="col-4"><strong>Number of Masts</strong>: @ships.NumberofMasts</p>
+            </div>
+        </div>
+    </div>
+
 }
 
 <div class="text-center">
